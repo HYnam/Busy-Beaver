@@ -12,3 +12,10 @@ machine = TuringMachine(
 w = "##" #try some strings here to find out what the machine accepts and rejects
 print("Input:",w)
 print("Accepted?", machine.accepts(w))
+
+"""
+Part 1a: 
+    in start state (q0) and # is encounter, then transition to state saw_#, write a # and move right
+    in saw_# state and # is encounter, then transition to state saw_##, write a # and move right
+    in saw_## state and '' or is blank, then transition to state accept (qa), write '' and move right
+"""
