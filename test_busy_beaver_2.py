@@ -18,8 +18,18 @@ bbeaver = TuringMachine(
         #such as ('q0', '1'): ('q1', '0', 'R'), which says if current state is q0 and 1 encountered
         #then transition to state q1, write a 0 and move head right.
         
+        ('a', '0'): ('b', '1', 'R'),
+        ('a', '1'): ('b', '1', 'L'),
+
+        ('b', '0'): ('a', '1', 'L'),
+        ('b', '1'): ('h', '1', 'R'),
     },
     start_state='a', accept_state='h', reject_state='r', blank_symbol='0'
 )
 
 bbeaver.debug('00000000000000', step_limit=1000)
+
+"""
+Part 3b
+
+"""
