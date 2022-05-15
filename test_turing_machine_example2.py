@@ -37,9 +37,10 @@ machine = TuringMachine(
     }
 )
 
-w = "XX" #try some strings here to find out what the machine accepts and rejects
+w = "100#100" #try some strings here to find out what the machine accepts and rejects
 print("Input:",w)
 print("Accepted?", machine.accepts(w))
+machine.debug(w)
 
 """
 Part 1a: 

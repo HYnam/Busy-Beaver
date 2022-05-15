@@ -209,6 +209,6 @@ class TuringMachine:
                     right=''.join(configuration['right_hand_side']),
                     b='\x1b[47;1m' if colored else '[',
                     f='\x1b[0m' if colored else ']',
-                    **configuration
+                    **configuration # 1b
                 )
             )

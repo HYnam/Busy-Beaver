@@ -12,6 +12,7 @@ machine = TuringMachine(
 w = "##" #try some strings here to find out what the machine accepts and rejects
 print("Input:",w)
 print("Accepted?", machine.accepts(w))
+machine.debug(w)
 
 """
 Part 1a: 
