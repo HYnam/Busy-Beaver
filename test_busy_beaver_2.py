@@ -31,5 +31,13 @@ bbeaver.debug('00000000000000', step_limit=1000)
 
 """
 Part 3b
+    Source: https://www.freecodecamp.org/news/how-and-why-you-should-use-python-generators-f6fb56650888/
 
+    Generator functions allow user to declare function that behave like an iterator,
+    it allows programmer to make an iterator in a fast, easy and clear way. 
+    Turing machine need to loop through many states, use generator is faster and save more memory space
+
+Part 3d
+    There are only two states in the Turing machine (a, b). 
+    The maximum number of 1's printed is 4, which is the same as my result. 
 """
